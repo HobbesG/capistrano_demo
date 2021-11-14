@@ -6,12 +6,12 @@
 
 # To add capistrano and capistrano-rails support, in Gemfile add
 
-'''ruby
+```ruby
 group :development do
   gem "capistrano", "~> 3.10", require: false
   gem "capistrano-rails", "~> 1.3", require: false
 end
-'''
+```
 
 Then run bundle install
 
@@ -23,7 +23,7 @@ run in the root of your project
 
 This will initialize your project with two stages, staging and production
 
-'''
+```
 ├── Capfile
 ├── config
 │   ├── deploy
@@ -33,7 +33,7 @@ This will initialize your project with two stages, staging and production
 └── lib
     └── capistrano
             └── tasks
-'''
+```
 
 Things you may want to cover:
 
