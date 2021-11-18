@@ -2,8 +2,10 @@
 lock "~> 3.16.0"
 
 set :application, "capistrano_demo"
-set :repo_url, "https://github.com/HobbesG/capistrano_demo.git"
+set :repo_url, "git@github.com:HobbesG/capistrano_demo.git"
 set :branch, "main"
+
+append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', '.bundle', 'public/system', 'public/uploads'
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
